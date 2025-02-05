@@ -118,7 +118,7 @@ namespace EsemkaVote
 
 
                 conn.Open();
-                SqlCommand queryVote = new SqlCommand(@"SELECT d.Name AS DivisionName, COUNT(vd.Id) AS VoteCount, FORMAT(COUNT(vd.Id) * 100.0 / (SELECT COUNT(*) FROM VotingDetail WHERE VotingHeaderId = vc.VotingHeaderId), 'N2') + ' %' AS Percentage FROM VotingDetail vd JOIN VotingCandidate vc ON vc.Id = vd.VotedCandidateId JOIN VotingHeader vh ON vh.Id = vc.VotingHeaderId JOIN Employee e ON e.Id = vc.EmployeeId JOIN Division d ON d.Id = e.DivisionId WHERE vh.Id = @Id GROUP BY d.Name, vc.VotingHeaderId ORDER BY VoteCount DESC;", conn);
+                SqlCommand queryVote = new SqlCommand("WITH DivisionVotes AS ( SELECT d.Id AS DivisionId, d.Name AS DivisionName, COUNT(vd.Id) AS VoteCount FROM VotingDetail vd JOIN Employee e ON vd.EmployeeId = e.Id JOIN Division d ON e.DivisionId = d.Id JOIN VotingCandidate vc ON vc.Id = vd.VotedCandidateId JOIN VotingHeader vh ON vh.Id = vc.VotingHeaderId WHERE vh.Id = '" + votedCandidateId + "' GROUP BY d.Id, d.Name), TotalVotes AS ( SELECT COUNT(vd.Id) AS TotalVoteCount FROM VotingDetail vd JOIN VotingCandidate vc ON vc.Id = vd.VotedCandidateId JOIN VotingHeader vh ON vh.Id = vc.VotingHeaderId WHERE vh.Id = '" + votedCandidateId + "') SELECT dv.DivisionName,  dv.VoteCount, FORMAT(dv.VoteCount * 100.0 / tv.TotalVoteCount, 'N2') + ' %' AS Percentage FROM DivisionVotes dv CROSS JOIN TotalVotes tv ORDER BY dv.VoteCount DESC;", conn);
                 queryVote.Parameters.AddWithValue("@Id", votedCandidateId);
                 SqlDataAdapter adapter = new SqlDataAdapter(queryVote);
                 DataTable dt = new DataTable();
@@ -126,17 +126,10 @@ namespace EsemkaVote
                 dataGridView1.DataSource = dt;
                 conn.Close();
 
-
-
-
-
             }
         }
 
-        //private void judul()
-        //{
-
-        //}
+        
 
 
         private void label3_Click(object sender, EventArgs e)

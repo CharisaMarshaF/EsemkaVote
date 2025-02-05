@@ -23,3 +23,4 @@ D:\CHARISAMF\PROJEK\DESKTOP\EsemkaVote\obj\Debug\net8.0-windows\refint\EsemkaVot
 D:\CHARISAMF\PROJEK\DESKTOP\EsemkaVote\obj\Debug\net8.0-windows\EsemkaVote.pdb
 D:\CHARISAMF\PROJEK\DESKTOP\EsemkaVote\obj\Debug\net8.0-windows\EsemkaVote.genruntimeconfig.cache
 D:\CHARISAMF\PROJEK\DESKTOP\EsemkaVote\obj\Debug\net8.0-windows\ref\EsemkaVote.dll
+D:\CHARISAMF\PROJEK\DESKTOP\EsemkaVote\obj\Debug\net8.0-windows\EsemkaVote.sourcelink.json
