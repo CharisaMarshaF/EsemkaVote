@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{DD71F9A8-DC89-474E-9EC2-21B4C893AE6C}|EsemkaVote.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DD71F9A8-DC89-474E-9EC2-21B4C893AE6C}|EsemkaVote.csproj|d:\\charisamf\\projek\\desktop\\esemkavote\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD71F9A8-DC89-474E-9EC2-21B4C893AE6C}|EsemkaVote.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD71F9A8-DC89-474E-9EC2-21B4C893AE6C}|EsemkaVote.csproj|d:\\charisamf\\projek\\desktop\\esemkavote\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD71F9A8-DC89-474E-9EC2-21B4C893AE6C}|EsemkaVote.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAcwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T09:04:44.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -57,22 +74,21 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\Form1.cs*",
               "RelativeToolTip": "Form1.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAswIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T02:18:36.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\Form1.cs [Design]*",
-              "RelativeToolTip": "Form1.cs [Design]*",
+              "ToolTip": "D:\\CHARISAMF\\PROJEK\\DESKTOP\\EsemkaVote\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T06:38:51.283Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-04T06:38:51.283Z"
             }
           ]
         }
